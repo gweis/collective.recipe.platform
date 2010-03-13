@@ -1,5 +1,6 @@
+import sys
+import platform
 
-import sys, platform
 
 def getplatform():
     if sys.platform == 'darwin':
@@ -9,6 +10,7 @@ def getplatform():
         elif mac_ver[0].startswith('10.5'):
             return 'darwin9'
     return sys.platform
+
 
 class Recipe(object):
 

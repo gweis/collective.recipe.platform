@@ -2,9 +2,9 @@
 Limitations:
 ============
 
-The recipe currently only generates platform strings for darwin10 and darwin9.
-Due to the simplicity of the recipe itself, it should not be hard ta add
-further platform-prefixes. (Patches and other contributions are welcome).
+The recipe currently only generates platform strings for darwin10, darwin9 and
+darwin8. Due to the simplicity of the recipe itself, it should not be hard to
+add further platform-prefixes. (Patches and other contributions are welcome).
 
 Example usage
 =============

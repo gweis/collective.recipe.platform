@@ -1,7 +1,9 @@
 from setuptools import setup, find_packages
-import sys, os
+import sys
+import os
 
 version = '0.1'
+
 
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
@@ -39,6 +41,6 @@ setup(name='collective.recipe.platform',
       tests_require=tests_require,
       extras_require=dict(tests=tests_require),
       test_suite='collective.recipe.platform.tests.test_docs.test_suite',
-      entry_points = {'zc.buildout':
-                      ['default = collective.recipe.platform:Recipe']},
+      entry_points={'zc.buildout':
+                    ['default = collective.recipe.platform:Recipe']},
       )

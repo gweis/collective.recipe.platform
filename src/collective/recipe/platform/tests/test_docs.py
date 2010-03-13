@@ -9,16 +9,18 @@ import zc.buildout.testing
 
 from zope.testing import doctest, renormalizing
 
-optionflags =  (doctest.ELLIPSIS |
-                doctest.NORMALIZE_WHITESPACE |
-                #doctest.REPORT_ONLY_FIRST_FAILURE |
-                doctest.REPORT_NDIFF)
+optionflags = (doctest.ELLIPSIS |
+               doctest.NORMALIZE_WHITESPACE |
+               #doctest.REPORT_ONLY_FIRST_FAILURE |
+               doctest.REPORT_NDIFF)
+
 
 def setUp(test):
     zc.buildout.testing.buildoutSetUp(test)
 
     # Install the recipe in develop mode
     zc.buildout.testing.install_develop('collective.recipe.platform', test)
+
 
 def test_suite():
     suite = unittest.TestSuite((

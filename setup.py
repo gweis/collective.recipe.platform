@@ -8,7 +8,7 @@ version = '0.1'
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-tests_require = ['zope.testing', 'zc.buildout']
+tests_require = ['zope.testing']
 
 setup(name='collective.recipe.platform',
       version=version,

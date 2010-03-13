@@ -9,6 +9,8 @@ def getplatform():
             return 'darwin10'
         elif mac_ver[0].startswith('10.5'):
             return 'darwin9'
+        elif mac_ver[0].startswith('10.4'):
+            return 'darwin8'
     return sys.platform
 
 
